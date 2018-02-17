@@ -5,8 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Lifecycle summary
 
 * ngOnChanges(changes: SimpleChanges) {
-    ** console.log('ngOnChanges called');
-    ** console.log(changes);
+    
+    console.log('ngOnChanges called');
+    
+    console.log(changes);
   }
 
 * ngOnInit() {
