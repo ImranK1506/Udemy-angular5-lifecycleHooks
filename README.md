@@ -7,34 +7,34 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * ngOnChanges(changes: SimpleChanges) {
     
     > console.log('ngOnChanges called');
-    
+
     > console.log(changes);
   }
 
 * ngOnInit() {
-    console.log('ngOnInit called');
+    > console.log('ngOnInit called');
   }
 
 * ngDoCheck() {
-    console.log('ngDoCheck called');
+    > console.log('ngDoCheck called');
   }
 
 * ngAfterContentInit() {
-    console.log('ngAfterContentInit called');
+    > console.log('ngAfterContentInit called');
   }
 
 * ngAfterContentChecked() {
-    console.log('ngAfterContentChecked called');
+    > console.log('ngAfterContentChecked called');
   }
 
  * ngAfterViewInit() {
-    console.log('ngAfterViewInit called');
+    > console.log('ngAfterViewInit called');
   }
 
 *  ngAfterViewChecked() {
-    console.log('ngAfterViewChecked called');
+    > console.log('ngAfterViewChecked called');
   }
 
 * ngOnDestroy() {
-    console.log('ngOnDestroy called');
+    > console.log('ngOnDestroy called');
   }
