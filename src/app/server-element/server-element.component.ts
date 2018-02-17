@@ -12,7 +12,8 @@ import {
   Input,
   ViewEncapsulation,
   ViewChild,
-  ElementRef
+  ElementRef,
+  ContentChild
 } from '@angular/core';
 
 @Component({
@@ -33,6 +34,7 @@ export class ServerElementComponent implements
   @Input() element: { type: string, name: string, content: string };
   @Input() name: string;
   @ViewChild('heading') header: ElementRef;
+  @ContentChild('contentParagraph') paragraph: ElementRef;
 
   constructor() {
     console.log('constructor called');
@@ -45,7 +47,8 @@ export class ServerElementComponent implements
 
   ngOnInit() {
     console.log('ngOnInit called');
-    console.log('No content with ngOnInit' + this.header.nativeElement.textContent);
+    console.log('No content with ngOnInit for heading' + this.header.nativeElement.textContent);
+    console.log('No content with ngOnInit for contentParagraph' + this.paragraph.nativeElement.textContent);
   }
 
   ngDoCheck() {
@@ -54,6 +57,7 @@ export class ServerElementComponent implements
 
   ngAfterContentInit() {
     console.log('ngAfterContentInit called');
+    console.log('Display content with AfterContentInit:' + this.paragraph.nativeElement.textContent);
   }
 
   ngAfterContentChecked() {
